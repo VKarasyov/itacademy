@@ -17,25 +17,27 @@
       height: 50px;
       border: solid gray 1px;
     }
-    .CHESS tr:nth-child(even) td:nth-child(even){
+    tr:nth-child(even) td:nth-child(even){
         background-color: black;
     }
-    .CHESS tr:nth-child(odd) td:nth-child(odd){
+    tr:nth-child(odd) td:nth-child(odd){
         background-color: black;
     }
-    table.CHESS tr:first-child{
+    
+    .CHESS tr:first-child td:nth-child(odd),tr:first-child td:nth-child(even){
         background-color: greenyellow;
     }
-    table.CHESS tr:last-child{
-        background-color:  greenyellow;
+    .CHESS tr:last-child td:nth-child(even),tr:last-child td:nth-child(odd){
+        background: greenyellow;
     }
-    table.CHESS td:last-child{
-        background-color: greenyellow;
+    .CHESS tr td:first-child {
+        background: greenyellow ;
     }
-    table.CHESS td:first-child{
-        background-color: greenyellow;
+    .CHESS tr td:last-child{
+        background: greenyellow ;
     }
-   
+    
+
    </style>
 </head>
 <body>
