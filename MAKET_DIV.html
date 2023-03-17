@@ -8,6 +8,9 @@
     <title>Блочная вёрстка</title>
     <link rel="stylesheet" href="">
     <style>
+        .main{
+            background: url(football2.gif) right repeat-y;
+        }
         .tb {
             text-align: center;
             padding: 20px;
@@ -15,26 +18,60 @@
             color: blue;
             font-size: 25px;
         }
-        #vs{
-            float: left; 
-            background-color: khaki; 
-            width: 170px; 
-            padding: 20px 10px; 
+
+        #vs {
+            float: left;
+            background-color: khaki;
+            width: 170px;
+            padding: 20px 10px;
             font-size: 18px;
         }
-       @media screen and(min-width:800px){
-        #vs{float: left;
-            background-color: darkkhaki;
-            width: 100px;
-            padding: 10px 5px;
-            font-size: 13px;
+        img{
+            float: left; 
+            margin: 0px 20px; 
         }
-       }
+        h2{
+            display: none;
+        }
+
+        
+
+        @media (max-width:570px) {
+            .tb {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #vs {
+                display: none;
+            }
+            h3{ display: none;
+                
+            }
+            h2{
+                display:block;
+                text-decoration: underline;
+            }
+            img{
+             content: url(football.gif);
+             float: right;
+             width: 250px;
+             margin: 10px;
+            }
+            .main{
+                background-image: none;
+            }
+            p{
+                font-style: italic;
+                font-size: 15px;
+            }
+           
+        }
     </style>
 </head>
 
 <body>
-    <div style="background: url(football2.gif) right repeat-y;">
+    <div class="main">
         <div class="tb">ПРИВЕТ УЧАСТНИКAМ СОРЕВНОВАНИЙ!</div>
         <div id="vs">
             <b>Виды спрорта:</b><br>
@@ -45,17 +82,23 @@
                 <li><a href="https://www.youtube.com/watch?v=2YCGpmrRmGc" target="_blank">Футбол</a></li>
                 <li><a href="http://ru.sport-wiki.org/vidy-sporta/strelba-iz-luka/" target="_blank">Стрельба из лука</a>
                 </li>
-                <li><a href="https://imarket.by/?utm_source=admitad&tagtag_uid=5df77dff6e66dc3f41c061d657a51140" target="_blank">Прыжки в длину</a></li>
+                <li><a href="https://imarket.by/?utm_source=admitad&tagtag_uid=5df77dff6e66dc3f41c061d657a51140"
+                        target="_blank">Прыжки в длину</a></li>
                 <li><a href="https://av.by">Прыжки в высоту</a></li>
-                <li><a href="https://yandex.by/video/preview/15992608119365515933" target="_blank">Фигурное катание</a></li>
-                <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание" target="_blank">Синхронное плавание</a></li>
+                <li><a href="https://yandex.by/video/preview/15992608119365515933" target="_blank">Фигурное катание</a>
+                </li>
+                <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание" target="_blank">Синхронное плавание</a>
+                </li>
                 <li><a href="https://www.chess.com/ru" target="_blank">Шахматы</a></li>
-                <li><a href="https://meduza.io/feature/2017/02/25/kak-nauchitsya-igrat-i-vyigryvat-v-shashki" target="_blank">Шашки</a></li>
+                <li><a href="https://meduza.io/feature/2017/02/25/kak-nauchitsya-igrat-i-vyigryvat-v-shashki"
+                        target="_blank">Шашки</a></li>
             </ul>
         </div>
+       
         <div style="overflow: hidden;">
             <h3 style="text-align: center ;">Футбол</h3>
-            <img src="football.gif" style="float: left; margin: 0px 20px; ">
+            <img src="football.gif">
+            <h2 style="text-align: center;">Футбол</h2>
             <p>Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами
                 или другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
             <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.
