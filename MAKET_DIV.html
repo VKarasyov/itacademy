@@ -8,9 +8,11 @@
     <title>Блочная вёрстка</title>
     <link rel="stylesheet" href="">
     <style>
-        .main{
+        .main {
             background: url(football2.gif) right repeat-y;
+
         }
+
         .tb {
             text-align: center;
             padding: 20px;
@@ -26,15 +28,17 @@
             padding: 20px 10px;
             font-size: 18px;
         }
-        img{
-            float: left; 
-            margin: 0px 20px; 
+
+        img {
+            float: left;
+            margin: 0px 20px;
         }
-        h2{
+
+        h2 {
             display: none;
         }
 
-        
+
 
         @media (max-width:570px) {
             .tb {
@@ -45,33 +49,43 @@
             #vs {
                 display: none;
             }
-            h3{ display: none;
-                
+
+            h3 {
+                display: none;
+
             }
-            h2{
-                display:block;
+
+            h2 {
+                display: block;
                 text-decoration: underline;
             }
-            img{
-             content: url(football.gif);
-             float: right;
-             width: 250px;
-             margin: 10px;
+
+            img {
+                content: url(football.gif);
+                float: right;
+                width: 250px;
+                margin: 10px;
             }
-            .main{
+
+            .main {
                 background-image: none;
             }
-            p{
+
+            p {
                 font-style: italic;
                 font-size: 15px;
             }
-           
+
         }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <div class=""
+            style="position: fixed; right: 5mm; top: 10mm; border: solid green 1px; background-color: coral; padding: 10px; cursor: pointer; text-align: center;">
+            <a title="Не кнопка">Нажать</a>
+        </div>
         <div class="tb">ПРИВЕТ УЧАСТНИКAМ СОРЕВНОВАНИЙ!</div>
         <div id="vs">
             <b>Виды спрорта:</b><br>
@@ -94,7 +108,7 @@
                         target="_blank">Шашки</a></li>
             </ul>
         </div>
-       
+
         <div style="overflow: hidden;">
             <h3 style="text-align: center ;">Футбол</h3>
             <img src="football.gif">
