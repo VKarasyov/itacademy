@@ -8,15 +8,17 @@
     <title>Блочная вёрстка</title>
     <link rel="stylesheet" href="">
     <style>
-        .div{
-            display: grid; border: 1px solid red;
-            grid-template-columns: 190px auto; grid-template-rows: 60px 500px 60px;
-            grid-template-areas: 
-            'header header'
-            'menu main'
-            'foot foot';
+        .div {
+            display: grid;
+            grid-template-columns: 190px auto;
+            grid-template-rows: 60px 500px 60px;
+            grid-template-areas:
+                'header header'
+                'menu main'
+                'foot foot';
         }
-        .head{
+
+        .head {
             display: grid;
             grid-area: header;
             justify-items: center;
@@ -25,7 +27,8 @@
             color: blue;
             font-size: 25px;
         }
-        .tb {
+
+        .foot {
             display: grid;
             grid-area: foot;
             justify-items: center;
@@ -34,16 +37,20 @@
             color: blue;
             font-size: 25px;
         }
-        #vs{
+
+        #vs {
             grid-area: menu;
             float: left;
-            background-color: khaki; 
-            padding: 20px 10px; 
+            background-color: khaki;
+            padding: 20px 10px;
             font-size: 18px;
         }
-        main{
+
+        main {
             grid-area: main;
         }
+
+        @media (max-width:570px)
     </style>
 </head>
 
@@ -60,15 +67,19 @@
                 <li><a href="https://www.youtube.com/watch?v=2YCGpmrRmGc" target="_blank">Футбол</a></li>
                 <li><a href="http://ru.sport-wiki.org/vidy-sporta/strelba-iz-luka/" target="_blank">Стрельба из лука</a>
                 </li>
-                <li><a href="https://imarket.by/?utm_source=admitad&tagtag_uid=5df77dff6e66dc3f41c061d657a51140" target="_blank">Прыжки в длину</a></li>
+                <li><a href="https://imarket.by/?utm_source=admitad&tagtag_uid=5df77dff6e66dc3f41c061d657a51140"
+                        target="_blank">Прыжки в длину</a></li>
                 <li><a href="https://av.by">Прыжки в высоту</a></li>
-                <li><a href="https://yandex.by/video/preview/15992608119365515933" target="_blank">Фигурное катание</a></li>
-                <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание" target="_blank">Синхронное плавание</a></li>
+                <li><a href="https://yandex.by/video/preview/15992608119365515933" target="_blank">Фигурное катание</a>
+                </li>
+                <li><a href="https://ru.wikipedia.org/wiki/Синхронное_плавание" target="_blank">Синхронное плавание</a>
+                </li>
                 <li><a href="https://www.chess.com/ru" target="_blank">Шахматы</a></li>
-                <li><a href="https://meduza.io/feature/2017/02/25/kak-nauchitsya-igrat-i-vyigryvat-v-shashki" target="_blank">Шашки</a></li>
+                <li><a href="https://meduza.io/feature/2017/02/25/kak-nauchitsya-igrat-i-vyigryvat-v-shashki"
+                        target="_blank">Шашки</a></li>
             </ul>
         </div>
-        <div class="main" style="overflow: hidden;">
+        <div class="main">
             <h3 style="text-align: center ;">Футбол</h3>
             <img src="football.gif" style="float: left; margin: 0px 20px; ">
             <p>Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами
@@ -80,7 +91,7 @@
                 от характера игры.</p>
         </div>
 
-        <div class="tb" style="clear: both;">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+        <div class="foot">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
     </div>
 
 
