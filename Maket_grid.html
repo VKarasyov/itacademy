@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="">
     <style>
         .div {
+            background: url(football2.gif) right repeat-y;
             display: grid;
             grid-template-columns: 190px auto;
             grid-template-rows: 60px 500px 60px;
@@ -49,13 +50,58 @@
             grid-area: main;
         }
 
-        
+        @media (max-width:570px) {
+
+            .div {
+
+                background-image: none;
+                display: grid;
+                grid-template-columns: 340px;
+                grid-template-rows: 550px 150px;
+                grid-template-areas:
+                    'main'
+                    'menu';
+            }
+
+            .head {
+                display: none;
+            }
+
+            .main {
+                display: grid;
+                grid-area: main;
+                justify-items: stretch;
+                align-content: center;
+            }
+
+            #vs {
+                grid-area: menu;
+                background: none;
+                padding: 8px 0px;
+                font-size: medium;
+            }
+
+            ul {
+                display: grid;
+                list-style-type: none;
+                grid-template-columns: repeat(5, 69px);
+                margin: 0;
+                padding: 0;
+                align-items: end;
+            }
+
+
+            .foot {
+                display: none;
+            }
+
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="div" style="background: url(football2.gif) right repeat-y;">
+    <div class="div">
         <div class="head">ПРИВЕТ УЧАСТНИКAМ СОРЕВНОВАНИЙ!</div>
         <div id="vs">
             <b>Виды спрорта:</b><br>
