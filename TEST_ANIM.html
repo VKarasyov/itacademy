@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all_conteiner{
+            height: 600px;
+        }
+        .conteiner {
+            display: inline-block;
+        }
+
+        .triangle_right {
+            width: 0px;
+            height: 0px;
+            border-top: 70px solid transparent;
+            border-left: 140px solid #ff5a00;
+            border-bottom: 70px solid transparent;
+            margin: 40px 20px 0px 40px;
+            transition: 1s;
+        }
+
+        .triangle_right:hover {
+            transform: scale(1.5);
+        }
+
+        .circle {
+            width: 120px;
+            height: 120px;
+            background: #7fee1d;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            position: relative;
+            left: 50px;
+            top: 30px;
+            transition: 1s;
+        }
+        .all_conteiner:hover .circle{
+            left: 200px;
+            top: 100px;
+        }
+        .board {
+            position: relative;
+            left: 300px;
+            top: 200px;
+            border: solid 1px red;
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            transition-duration: 3s;
+            transition-delay: 1s;
+        }
+        .all_conteiner:hover .board{
+            transform: scale(3);
+            border: solid 8px red;
+            background-color: blueviolet;
+        }
+        
+        @keyframes Animation{
+            from{background-color: aqua;}
+            25%{background-color: brown;}
+            50%{background-color: chartreuse;}
+            75%{background-color: crimson;}
+            to{background-color: rgb(231, 9, 194);}
+        }
+        .anim{
+            border: solid 1px blue;
+            height: 50px;
+            width: 200px;
+            position: relative;
+            left: 500px;
+            animation: Animation 8s infinite;
+        }
+        @keyframes Animation2{
+            from{top:100px; left: 200px;}
+            25%{top:250px; left:50px;}
+            50%{top:400px; left:-50px;}
+            to{top:50px; left: -300px;}
+        }
+        
+        .circle2 {
+            width: 120px;
+            height: 120px;
+            background: #ee1d1d;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            position: relative;
+            animation: Animation2 5s alternate infinite;
+        }
+
+
+
+         
+    </style>
+</head>
+
+<body>
+    <div class="all_conteiner">
+        <div class="conteiner">
+            <div class="triangle_right"></div>
+        </div>
+        <div class="conteiner">
+            <div class="circle"></div>
+        </div>
+        <div class="conteiner">
+            <div class="board"></div>
+        </div>
+        <div class="conteiner">
+            <div class="anim"></div>
+        </div>
+        <div class="conteiner">
+            <div class="circle2"></div>
+        </div>
+    </div>    
+
+</body>
+
+</html>
