@@ -79,8 +79,9 @@
         }
         @keyframes Animation2{
             from{top:100px; left: 200px;}
-            25%{top:250px; left:50px;}
+            25%{top:250px; left: 50px;}
             50%{top:400px; left:-50px;}
+            75%{top:200px; left: 300px;}
             to{top:50px; left: -300px;}
         }
         
@@ -92,7 +93,7 @@
             -webkit-border-radius: 60px;
             border-radius: 60px;
             position: relative;
-            animation: Animation2 5s alternate infinite;
+            animation: Animation2 5s alternate infinite linear;
         }
 
 
