@@ -1,4 +1,4 @@
-let countrysH={};
+let countrysH = {};
 
     function addCountry(countryName,capitalName) {
         countrysH[countryName]=capitalName;
@@ -10,9 +10,9 @@ let countrysH={};
 
     function getCountryInfo(countryName) {
         if ( countryName in countrysH )
-            return 'страна: ' + countryName + ' столица: ' + countrysH[countryName] ;
+            return 'Страна: ' + countryName + ' Столица: ' + countrysH[countryName] ;
         else
-            return 'нет информации о стране ' + countryName + '!' ;
+            return 'Нет информации о стране ' + countryName + '!' ;
     }
 
     function listCountrys() {
