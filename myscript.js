@@ -7,7 +7,6 @@ function addCountryS() {
 function getCountryInfoS() {
     let countryName = prompt('Введите название страны:');
     alert(getCountryInfo(countryName));
-    console.log(getCountryInfo(countryName));
 }
 
 function deleteCountryS() {
@@ -17,6 +16,4 @@ function deleteCountryS() {
 
 function allListCountrys() {
     alert(listCountrys());
-    console.log(listCountrys());
-
 }
