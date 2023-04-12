@@ -18,10 +18,9 @@ document.getElementsByTagName("nav")[0].style.padding = '5px';
 
 let firstTexts = document.getElementsByClassName("main_text_one")
 for (let e = 0; e < firstTexts.length; e++) {
-    let mainTexts = firstTexts[e];
-    mainTexts.style.borderStyle = 'dashed';
-    mainTexts.style.borderColor = 'yellow';
-    mainTexts.style.borderWidth = '2px';
+    firstTexts[e].style.borderStyle = 'dashed';
+    firstTexts[e].style.borderColor = 'yellow';
+    firstTexts[e].style.borderWidth = '2px';
 }
 firstTexts[0].style.textDecoration = 'underline';
 firstTexts[0].style.textAlign = 'right'
