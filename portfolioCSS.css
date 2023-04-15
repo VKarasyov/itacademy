@@ -1,108 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
+body {
+    margin: 0;
+}
 
-.header a {
-    position: absolute;
+.container {
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.header .menu a {
     text-decoration: none;
     color: #828282;
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
     width: 90px;
-
 }
 
 #homebttn {
     color: black;
-    left: 17.44%;
-    right: 79.15%;
-}
-
-#about_me {
-    left: 31.62%;
-    right: 62.68%;
-
-}
-
-#skills {
-    left: 48.09%;
-    right: 48.99%;
-
-}
-
-#portfolio {
-    left: 61.71%;
-    right: 33.29%;
-
-}
-
-#contacts {
-    left: 77.48%;
-    right: 17.16%;
 
 }
 
 .header .dash {
-    position: absolute;
-    left: 17.44%;
-    right: 16.16%;
-    top: 55px;
     border: 1px solid #828282;
+    margin-top: 15px;
 
 }
-
-.header h2 {
-    position: absolute;
-    left: 17.37%;
-    right: 74%;
-    top: 10%;
-    font: 500 45px 'Poppins';
-    line-height: 59px;
-    color: black;
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 45px;
 }
-
-.header p {
-    position: absolute;
-    left: 46.49%;
-    top: 22%;
+.subtitle .name{
+    font: 500 37px 'Poppins';
+    width: 175px;
+    line-height: 50px;
+}
+.subtitle .info{
     font: 300 17px 'Poppins';
 }
-
-.header p:last-of-type {
-    left: 81%;
-    top: 24%;
-    transform: rotate(-90deg);
-    font-size: 15px;
+.subtitle .lang{
+    display: inherit;
+    transform: translateY(-18px) rotate(-90deg);
+    font: 500 16px 'Poppins';
 }
-
-.header img {
-    position: absolute;
-    width: 885px;
-    left: 225px;
-    top: 250px;
+.subtitle .lang #langRu{
+    color: #828282;
 }
-
-.main {
-    position: absolute;
-    top: 760px;
-    left: 0px;
-    width: 100%;
-    height: 400px;
+.subtitle .lang #langEng{
+    color: #000000;
+}
+.portrait{
+    background: url(BSPP2266.png);
+    height: 390px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.AboutMe{
     text-align: center;
-    background-color: #F6F6F6;
+    margin-top: 100px;
+    background: #F6F6F6;
+    
+}
+.AboutMe h2{
+    font: 500 24px 'Poppins';
+    padding-top: 100px;
+}
+.AboutMe p{
+    font: 300 16px 'Poppins';
+    width: 485px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.skills{
+    text-align: center;
+    margin-top: 90px;
+    font: 500 18px 'Poppins';
 }
 
-.main .info {
-    position: absolute;
-    width: 450px;
-    left: 33%;
-    top: 20%;
+.skills p{
+    margin-top: 60px;
+    font: 300 16px 'Poppins';
 }
 
-.main a {
-    font: 500 22px 'Poppins';
-}
-
-.main .info p {
-    font: 300 15px 'Poppins';
+.instruments{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    margin-bottom: 100px;
 }
