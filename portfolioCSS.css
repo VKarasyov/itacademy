@@ -36,67 +36,199 @@ body {
     margin-top: 15px;
 
 }
-.subtitle{
+
+.subtitle {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 45px;
 }
-.subtitle .name{
+
+.subtitle .name {
     font: 500 37px 'Poppins';
     width: 175px;
     line-height: 50px;
 }
-.subtitle .info{
+
+.subtitle .info {
     font: 300 17px 'Poppins';
 }
-.subtitle .lang{
+
+.subtitle .lang {
     display: inherit;
     transform: translateY(-18px) rotate(-90deg);
     font: 500 16px 'Poppins';
 }
-.subtitle .lang #langRu{
+
+.subtitle .lang #langRu {
     color: #828282;
 }
-.subtitle .lang #langEng{
+
+.subtitle .lang #langEng {
     color: #000000;
 }
-.portrait{
+
+.portrait {
     background: url(BSPP2266.png);
     height: 390px;
     background-repeat: no-repeat;
     margin-top: 50px;
 }
-.AboutMe{
+
+.AboutMe {
     text-align: center;
     margin-top: 100px;
     background: #F6F6F6;
-    
+
 }
-.AboutMe h2{
+
+.AboutMe h2 {
     font: 500 24px 'Poppins';
     padding-top: 100px;
 }
-.AboutMe p{
+
+.AboutMe p {
     font: 300 16px 'Poppins';
     width: 485px;
     margin: 0 auto;
     padding-bottom: 100px;
 }
-.skills{
+
+.skills {
     text-align: center;
     margin-top: 90px;
-    font: 500 18px 'Poppins';
+
 }
 
-.skills p{
+.skills h2 {
+    font: 500 24px 'Poppins';
+}
+
+.skills p {
     margin-top: 60px;
     font: 300 16px 'Poppins';
 }
 
-.instruments{
+.instruments {
     display: flex;
     justify-content: space-between;
     margin-top: 85px;
     margin-bottom: 100px;
+}
+
+.instruments .Ps {
+    width: 160px;
+}
+
+.instruments .iconPs {
+    background-color: #1f0726;
+    height: 89px;
+    margin-left: 34px;
+}
+
+.instruments .iconAi {
+    background-color: #1f0726;
+    height: 89px;
+    margin-left: 34px;
+}
+
+.instruments .iconAe {
+    background-color: #1f0726;
+    height: 89px;
+    margin-left: 34px;
+}
+
+.instruments .iconFigma {
+    margin-left: 34px;
+}
+
+.instruments p {
+    text-align: center;
+    margin-top: 30px;
+    font: 300 15px 'Poppins';
+}
+
+.instruments #star1 {
+    margin-top: 20px;
+}
+
+.instruments .star2 {
+    margin-left: 8px;
+}
+
+.instruments #starFigma {
+    margin-top: 36px;
+}
+
+.Portfolio {
+    text-align: center;
+    margin-top: 110px;
+    background: #F6F6F6;
+}
+
+.Portfolio h2 {
+    padding-top: 110px;
+    font: 500 24px 'Poppins';
+}
+
+.Portfolio #portfolioimg {
+    margin-top: 47px;
+}
+
+.Portfolio p {
+    margin-top: 45px;
+    text-decoration: underline;
+    font: 300 16px 'Poppins';
+}
+
+.Portfolio .portfolioimage {
+    margin-top: 99px;
+}
+
+.Portfolio .lastP {
+    padding-bottom: 95px;
+}
+
+.Footer {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Footer h2 {
+    margin-top: 115px;
+    font: 500 24px 'Poppins';
+}
+
+.Footer p {
+    margin-top: 20px;
+    font: 500 14px 'Poppins';
+}
+
+.Footer .post {
+    width: 150px;
+    height: 30px;
+    border-radius: 40px;
+    background: black;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.Footer .commbutton {
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.Footer .communicIcons {
+    margin-top: 80px;
+    width: 300px;
+}
+
+.Footer .lastfootP {
+    font: 300 16px 'Poppins';
+    margin-top: 45px;
+    margin-bottom: 120px;
 }
