@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 #menuToggle {
@@ -31,7 +32,7 @@ body {
 }
 
 #homebttn {
-    color: black;
+    color: #000000;
 
 }
 
@@ -284,7 +285,23 @@ body {
     margin-bottom: 120px;
 }
 
-@media (max-width: 375px) {
+#toTop {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #828282;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: url(image/arrow-up-362-svgrepo-com.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+@media (max-width: 941px) {
     .container {
         width: auto;
         margin: 0 auto;
@@ -294,20 +311,16 @@ body {
         display: none;
     }
 
+
+
     #menuToggle {
         display: block;
-        position: relative;
+        position: absolute;
         top: 50px;
-        left: 320px;
+        right: 10px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
-    }
-
-    #menuToggle a {
-        text-decoration: none;
-        color: #232323;
-        transition: color 0.3s ease;
     }
 
     #menuToggle input {
@@ -325,7 +338,7 @@ body {
 
     #menuToggle span {
         display: block;
-        width: 25px;
+        width: 33px;
         height: 4px;
         margin-bottom: 5px;
         position: relative;
@@ -346,6 +359,7 @@ body {
         transform-origin: 0% 100%;
     }
 
+
     #menuToggle input:checked~span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
@@ -358,57 +372,73 @@ body {
     }
 
     #menuToggle input:checked~span:nth-last-child(2) {
+        opacity: 1;
         transform: rotate(-45deg) translate(0, -1px);
     }
 
     #menu {
         position: absolute;
-        width: 100px;
-        margin: -80px 0 0 -200px;
-        padding: 40px 140px 140px 15px;
-        background: white;
+        width: 250px;
+        height: 450px;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 50px;
+        right: -10px;
+        background: #ededed;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
-        transform: translate(100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        transform: none;
+        opacity: 0;
+        transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
 
-    #menu #homebttn li {
+    #menu #lang {
+        display: flex;
         font: 500 22px 'Poppins';
+        transform: translateY(160px) translateX(150px) rotate(90deg);
     }
 
-    #menu .lang {
-        transform: translateY(-18px) rotate(90deg);
-        font: 500 18px 'Poppins';
-        position: relative;
-        top: 110px;
-        left: 150px
-    }
-
-    #menu #langRu {
-        display: contents;
-        color: #828282;
-    }
-
-    #menu #langEng {
-        display: contents;
+    #menu span {
+        font: 500 22px 'Poppins';
         color: #000000;
+        background: none;
     }
 
     #menu li {
-        padding: 15px 0;
+        padding: 18px 0;
         font-size: 22px;
-        font-family: 'Poppins';
-        font-weight: 300;
+    }
+
+    #buttonhome {
+        color: #000000;
+    }
+
+    a {
+        text-decoration: none;
+        color: #828282;
+        transition: color 0.3s ease;
+        font: 500 22px 'Poppins';
+    }
+
+    a:hover {
+        color: rgb(117, 6, 6);
     }
 
     #menuToggle input:checked~ul {
         transform: none;
+        opacity: 1;
     }
 
     .subtitle {
-        display: block;
+        width: 200px;
+        margin: 40px 035px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subtitle .info {
+        margin-top: 20px;
     }
 
     .subtitle .lang {
@@ -422,10 +452,12 @@ body {
         width: 300px;
         margin: 0 auto;
     }
-    .AboutMe{
+
+    .AboutMe {
         margin-top: 60px;
     }
-    .AboutMe h2{
+
+    .AboutMe h2 {
         padding-top: 75px;
     }
 
@@ -433,7 +465,8 @@ body {
         width: 240px;
         padding-bottom: 60px;
     }
-    .skills{
+
+    .skills {
         margin-top: 50px;
     }
 
@@ -477,10 +510,12 @@ body {
         width: auto;
         margin: 0 auto;
     }
-    .Footer .box{
+
+    .Footer .box {
         width: 280px;
     }
-    .Footer .communicIcons{
+
+    .Footer .communicIcons {
         margin-top: 50px;
     }
 

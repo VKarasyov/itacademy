@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolioCSS.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="#" id="homebttn">
+                <a href="#" id="buttonhome">
                     <li>Home</li>
                 </a>
                 <a href="#go_aboutme">
@@ -42,12 +43,7 @@
                 <a href="#go_contacts">
                     <li>Contacts</li>
                 </a>
-                <a href="">
-                    <div class="lang">
-                        <div id="langRu">RU</div>
-                        <div id="langEng">|ENG</div>
-                    </div>
-                </a>
+                <a href="#" id="lang">RU<span>|ENG</span></a>
             </ul>
         </div>
         <div class="subtitle">
@@ -136,9 +132,10 @@
         </div>
         <img src="image/communication icons.png" class="communicIcons">
         <p class="lastfootP">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+        <div id="toTop"></div>
 
     </div>
-
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
