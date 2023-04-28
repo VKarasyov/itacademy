@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -291,8 +292,8 @@ body {
     border: 1px solid #828282;
     border-radius: 50%;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     cursor: pointer;
     background: url(image/arrow-up-362-svgrepo-com.png);
     background-size: 40px;
@@ -517,6 +518,11 @@ body {
 
     .Footer .communicIcons {
         margin-top: 50px;
+    }
+    #toTop {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;   
     }
 
 }
