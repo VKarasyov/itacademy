@@ -5,5 +5,5 @@ function result(){
     for (let i = 0; i < getNum.length; i++) {
         sum += Number( getNum[i] ); 
 }
-alert(sum)
+Sum.innerHTML = sum
 }
