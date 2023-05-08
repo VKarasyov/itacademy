@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>function tempC() 
+        {
+          let Ctemp = document.getElementById("value").value;
+          let CtoFar = Ctemp * 9 / 5 + 32;
+          let result = Ctemp+'\xB0C is ' + CtoFar + ' \xB0F.';
+          Result.innerHTML = result;
+        }
+        function tempF(){
+          let Ftemp = document.getElementById("value").value;
+          let FtoCel = (Ftemp - 32) * 5 / 9;
+          let result = Ftemp+'\xB0F is ' + FtoCel + '\xB0C.';
+          Result.innerHTML = result;
+        }</script>
+</head>
+
+<body>
+    <input type="text" id="value">
+    <button type="button" onclick="tempC()">В цельсиях</button>
+    <button type="button" onclick="tempF()">В фаренгейт</button>
+    <span id="Result"></span>
+</body>
+
+</html>
