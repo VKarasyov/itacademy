@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [0, 1, 2, 3];
+        let result = arr;
+        
+        function allArr(){
+            res.innerHTML=result
+        }
+        function addInEnd() {
+            let index = +prompt("");
+            arr.push(index);
+            res.innerHTML=result
+        }
+
+        function addInFirst() {
+            let index = +prompt("");
+            arr.unshift(index);
+            res.innerHTML=result
+        }
+
+        function delEnd() {
+            arr.pop();
+            res.innerHTML=result
+        }
+
+        function delFirst() {
+            arr.shift();
+            res.innerHTML=result
+        }
+        function delInd() {
+            let index = +prompt("");
+            delete arr[index-1]
+            res.innerHTML=result
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="allArr()">показать массив</button>
+    <button onclick="addInEnd()">Добавить в конец</button>
+    <button onclick="addInFirst()">добавить в начало</button>
+    <button onclick="delEnd()">удалить в конце</button>
+    <button onclick="delFirst()">удалить в начале</button>
+    <button onclick="delInd()">удалить по номеру</button>
+    <br>
+    <span id="res"></span>
+</body>
+
+</html>
