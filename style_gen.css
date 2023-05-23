@@ -6,10 +6,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)), url(image/high_bg.png);
     box-shadow: 0px 83px 45px 2px rgba(0, 0, 0, 0.6) inset;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 750px;
-
+    background-position: center;
 }
 
 
@@ -53,7 +50,7 @@ nav {
 
 }
 
-.contact {
+.contact_head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +60,7 @@ nav {
     color: gray;
 }
 
-.contact img {
+.contact_head img {
     width: 14px;
     height: 14px;
     margin-right: 5px;
@@ -99,20 +96,24 @@ nav {
 #button-head:active {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
-.caption-nft{
+
+.caption-nft {
     color: white;
     text-align: center;
-    padding-top: 50px;
+}
+.caption-nft h1{
+    margin: 0;
 }
 
-.fuel{
+.fuel {
     height: 500px;
     background-image: url(image/ship.png);
     background-position: center;
     display: flex;
     align-items: flex-start;
 }
-.bg-lodje{
+
+.bg-lodje {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -120,8 +121,9 @@ nav {
     height: 500px;
     width: 50%;
 }
-#ST{
-    
+
+#ST {
+
     background-color: gray;
     opacity: 0.7;
     width: 350px;
@@ -129,11 +131,13 @@ nav {
     text-align: center;
     margin-right: -10px;
 }
-.cards-fuel{
+
+.cards-fuel {
     margin: 50px auto;
     width: 250px;
 }
-#DT{ 
+
+#DT {
     background-color: gray;
     opacity: 0.7;
     width: 350px;
@@ -141,7 +145,8 @@ nav {
     text-align: center;
     margin-left: -10px;
 }
-.fuel-supp{
+
+.fuel-supp {
     display: flex;
     justify-content: space-around;
     height: 250px;
@@ -150,54 +155,57 @@ nav {
     background-repeat: no-repeat;
     background-size: 82em;
 }
-#PT{
+
+#PT {
     margin-left: 21em;
     background-color: gray;
     opacity: 0.7;
     width: 350px;
     height: 250px;
     text-align: center;
-    
+
 }
-.main-gas_station{
+
+.main-gas_station {
     margin: 35px 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.arrows_gs{
+
+.arrows_gs {
     height: 20em;
 }
-.mini_gas_station{
+
+.mini_gas_station {
     border: 3px dashed gray;
     border-radius: 50px;
     text-align: center;
     width: 100%;
     margin: 0 40px;
 }
-.about_gas_station{
+
+.about_gas_station {
     margin: 0 auto;
     width: 450px;
 }
-.gas_station{
+
+.gas_station {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
 }
-.icon_gas_station{
+
+.icon_gas_station {
     width: 235px;
 }
-.first_azs{
+
+.azs {
     width: 235px;
 }
-.second_azs{
-    width: 235px;
-}
-.third_azs{
-    width: 235px;
-}
-#gas_station_bttn{
+
+.bttn_basic {
     color: #FDBE33;
     background: none;
     border: 2px solid #FDBE33;
@@ -205,10 +213,176 @@ nav {
     padding: 0.5em 9em;
     margin: 27px auto;
 }
-#gas_station_bttn:hover{
+
+.bttn_basic:hover {
     color: white;
     background: linear-gradient(#f5ae00, #f59500) #f5ae00;
 }
-#gas_station_bttn:active{
+
+.bttn_basic:active {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+
+.about {
+    margin-top: 150px;
+    margin-bottom: 500px;
+}
+
+.maker {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.all_makers {
+    margin: 40px auto;
+    width: 980px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon_makers {
+
+    height: 50px;
+}
+
+.delivery {
+    text-align: center;
+    margin: 0 auto;
+    width: 985px;
+    border: 1px solid #F8F8F8;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+}
+
+.delivery img {
+    width: 873px;
+
+}
+
+.clients {
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.clients img {
+    width: 873px;
+}
+
+.comments {
+    border: 1px dashed #DBA833;
+    border-radius: 72px;
+    background-color: #F8F8F8;
+    width: 873px;
+    margin: 100px auto;
+    text-align: center;
+
+}
+
+#memo {
+    transform: rotate(-90deg);
+    width: 133px;
+    text-align: center;
+    display: block;
+    margin-right: -46px;
+    margin-left: -17px;
+}
+
+.cards_comments {
+    border: 1px solid black;
+    border-radius: 43px;
+    background-color: white;
+    width: 750px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+
+.cards_comments img {
+    height: 208px;
+    margin: 30px 15px;
+}
+
+.info_comm {
+    width: 491px;
+}
+
+.news{
+    text-align: center;
+}
+
+.section_news {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 873px;
+    margin: 0 auto;
+}
+
+.cards_news {
+    border: 1px solid black;
+    width: 250px;
+
+}
+
+.cards_top {
+    border-bottom: 1px solid black;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+
+.cards_top img {
+    margin: 15px auto;
+    height: 120px;
+}
+
+.cards_main {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.bttn_news {
+    color: #FDBE33;
+    background: none;
+    border: 2px solid #FDBE33;
+    transition: 0.2s;
+    padding: 0.5em 4em;
+    margin: 20px 35px
+}
+
+.bttn_news:hover {
+    color: white;
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+.bttn_news:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+.bttn_all_news {
+    color: #FDBE33;
+    background: none;
+    border: 2px solid #FDBE33;
+    transition: 0.2s;
+    padding: 0.5em 9em;
+    margin-top: 30px;
+}
+
+.bttn_all_news:hover {
+    color: white;
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+.bttn_all_news:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+.contact_us{
+    margin-top: 80px;
+    background-image: url(image/truck2.png);
+    background-position: center;
+    background-size: 100%;
+    height: 270px;
 }
