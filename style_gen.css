@@ -1,14 +1,17 @@
 body {
     margin: 0;
 }
-span{
+
+span {
     color: #DBA833;
 }
+
 .head {
     background: linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)), url(image/high_bg.png);
     box-shadow: 0px 83px 45px 2px rgba(0, 0, 0, 0.6) inset;
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -33,7 +36,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding-top: 15px;
     padding: 0;
     margin: 0;
     border-bottom: dashed 2px #4F4F4F;
@@ -77,7 +79,8 @@ nav {
     color: #FFFFFF;
 
 }
-.header-main p{
+
+.header-main p {
     color: #CECECE;
 }
 
@@ -110,16 +113,20 @@ nav {
 .caption-nft h1 {
     margin: 0;
 }
-.main{
+
+.main {
     color: #FFFFFF;
 }
-.main p{
+
+.main p {
     color: #CECECE;
 }
+
 .fuel {
     height: 500px;
     background-image: url(image/ship.png);
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
     display: flex;
     align-items: flex-start;
 }
@@ -129,6 +136,8 @@ nav {
     align-items: flex-end;
     justify-content: flex-end;
     background-image: url(image/lodje.png);
+    background-position: center center;
+    background-size: cover;
     height: 500px;
     width: 50%;
 }
@@ -159,9 +168,9 @@ nav {
     justify-content: space-around;
     height: 250px;
     background-image: url(image/prodotti-120975-relfdc2776712044e17a91dfbaef1d435d5-1.jpg);
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 82em;
 }
 
 #PT {
@@ -191,7 +200,8 @@ nav {
     width: 100%;
     margin: 0 40px;
 }
-.mini_gas_station p{
+
+.mini_gas_station p {
     color: #5B5B5B;
 }
 
@@ -235,17 +245,19 @@ nav {
 
 .about {
     margin-top: 150px;
-    margin-bottom: 500px;
 }
 
 .maker {
     text-align: center;
     margin-bottom: 150px;
 }
+.maker p{
+    color: #5B5B5B;
+}
 
 .all_makers {
     margin: 40px auto;
-    width: 980px;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -259,14 +271,14 @@ nav {
 .delivery {
     text-align: center;
     margin: 0 auto;
-    width: 985px;
+    width: 76%;
     border: 1px solid #F8F8F8;
     background-color: #F8F8F8;
     border-radius: 50%;
 }
 
 .delivery img {
-    width: 873px;
+    width: 87%;
 
 }
 
@@ -277,20 +289,24 @@ nav {
 }
 
 .clients img {
-    width: 873px;
+    width: 66%;
 }
 
 .comments {
     border: 1px dashed #DBA833;
     border-radius: 72px;
     background-color: #F8F8F8;
-    width: 873px;
+    width: 66%;
     margin: 100px auto;
     text-align: center;
 
 }
-.comments h2{
+
+.comments h2 {
     color: #DBA833;
+}
+.comments p{
+    color: #5B5B5B;
 }
 
 #memo {
@@ -300,13 +316,14 @@ nav {
     display: block;
     margin-right: -46px;
     margin-left: -17px;
+    color: #B6B6B6;
 }
 
 .cards_comments {
     border: 1px solid black;
     border-radius: 43px;
     background-color: white;
-    width: 750px;
+    width: 86%;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -321,7 +338,7 @@ nav {
 }
 
 .info_comm {
-    width: 491px;
+    width: 60%;
 }
 
 .news {
@@ -332,14 +349,18 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 873px;
+    width: 66.6%;
     margin: 0 auto;
 }
 
 .cards_news {
     border: 1px solid black;
     width: 250px;
+    margin-top: 10px;
 
+}
+.cards_news p{
+    color: #5B5B5B;
 }
 
 .cards_top {
@@ -350,7 +371,7 @@ nav {
 
 .cards_top img {
     margin: 15px auto;
-    height: 120px;
+    width: 55%;
 }
 
 .cards_main {
@@ -363,8 +384,8 @@ nav {
     background: none;
     border: 2px solid #FDBE33;
     transition: 0.2s;
-    padding: 0.5em 4em;
-    margin: 20px 35px
+    padding: 3% 10%;
+    margin: 10%;
 }
 
 .bttn_news:hover {
@@ -397,25 +418,26 @@ nav {
 .contact_us {
     margin-top: 80px;
     background-image: url(image/truck2.png);
-    background-position: center;
-    background-size: 82em;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 270px;
 }
 
 .data_input {
-    width: 873px;
+    width: 66.6%;
     margin: 0 auto;
     padding-top: 45px;
     color: #ffffff;
 }
-.data_input p{
+
+.data_input p {
     text-align: right;
-    
+
 }
 
 .contact_us input {
-    width: 272px;
+    width: 31.1%;
     padding: 7px;
     margin-right: 8px;
     background-color: #1E1E1E;
@@ -438,31 +460,110 @@ nav {
 #submit:active {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
-.our_team{
-    height: 462px;
+
+.our_team {
     background-image: url(image/bg_team.png);
-    background-size: 82em;
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     color: #ffffff;
 }
-.our_team h1{
+
+.our_team h1 {
     margin: auto;
     padding-top: 16px;
 }
-.our_team h2{
+
+.our_team h2 {
     color: #DBA833;
 }
-.all_cards_team{
-    width: 873px;
+
+.all_cards_team {
+    width: 66.6%;
     margin: 10px auto;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.cards_team{
+
+.cards_team {
     width: 230px;
 }
-.cards_team img{
+.cards_team p:last-child{
+    color: #B9B9B9;
+}
+
+.cards_team img {
     height: 244px;
+}
+.footer{
+    width: 85%;
+    margin: 0 auto;
+}
+#line{
+    width: 100%;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    margin: 0 auto;
+}
+
+#logo_footer {
+    height: 125px;
+}
+
+.footer_info {
+    height: 125px;
+    color: #DBA833;
+}
+
+.footer_menu {
+    width: 13%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footer_menu a{
+    color: #5B5B5B;
+    text-decoration: none;
+}
+
+.footer_content button {
+    border: 2px solid #B6B6B6;
+   background: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.footer_content a button img {
+    margin-top: 5px;
+}
+.footer_content button p{
+    color: #B6B6B6;
+}
+.footer .social{
+    display: flex;
+    justify-content: space-between;
+}
+.social_info{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: #5B5B5B;
+}
+.social_info p:last-child{
+    text-decoration: underline;
+}
+
+.social_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
 }
