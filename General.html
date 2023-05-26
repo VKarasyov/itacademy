@@ -14,9 +14,9 @@
 <body>
     <div class="head">
         <div class="logo"><img src="image/logo_general.png" alt=""></div>
-        <nav>
+        <nav class="main-menu">
             <ul class="menu">
-                <li class="menu-item"><a href="">Главная</a></li>
+                <li class="menu-item"><a href="#">Главная</a></li>
                 <li class="menu-item"><a href="">Дизельное топливо</a></li>
                 <li class="menu-item"><a href="">Мини-АЗС</a></li>
                 <li class="menu-item"><a href="">Печное топливо</a></li>
@@ -26,6 +26,34 @@
                 <li class="menu-item"><a href=""><img src="image/LK-logo.png">Личный кабинет</a></li>
             </ul>
         </nav>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#">
+                    <li>Главная</li>
+                </a>
+                <a  href="">
+                    <li>Дизельное топливо</li>
+                </a>
+                <a  href="">
+                    <li>Мини-АЗС</li>
+                </a>
+                <a  href="">
+                    <li>Печное топливо</li>
+                </a>
+                <a  href="">
+                    <li>Судовое топливо</li>
+                </a>
+                <a href=""><li>Блог</li></a>
+                <a href=""><li>Контакты</li></a>
+                <a href=""><li><img src="image/lk-logo1.png" alt="">Личный кабинет</li></a>
+                
+            </ul>
+        </div>
+
         <div class="contact_head">
             <a> <img src="image/clock.png">Пн-Пт: 9:00 - 19:00</a>
             <a> <img src="image/Subtract.png"> info@neftekor.ru</a>
@@ -43,42 +71,46 @@
     </div>
     <div class="main">
         <div class="fuel">
-            <div class="bg-lodje">
-                <div id="ST">
-                    <div class="cards-fuel">
-                        <h2>Судовое топливо</h2>
-                        <p>Мы предоставляем судовое дизельное топливо как для физических лиц, так и компаниям</p>
+            <div class="bg-ship">
+                <div class="bg-lodje">
+                    <div id="DT">
+                        <div class="cards-fuel">
+                            <h2>Судовое топливо</h2>
+                            <p>Мы предоставляем судовое дизельное топливо как для физических лиц, так и компаниям</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-ship-mob">
+                    <div id="ST">
+                        <div class="cards-fuel">
+                            <h2>Дизельное топливо</h2>
+                            <p>Мы являемся надежным поставщиком дизельного топлива в Москве и Московской области.</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="battary-fuel">
+                <div id="PT">
+                    <div class="bake-fuel">
+                        <h2>Печное топливо</h2>
+                        <p>Печное топливо может служить для отопления коммерческой недвижимости и частных домов,
+                            строительных
+                            площадок, в качестве топлива для небольших котельных и сельхоз организаций.</p>
                         <button>Подробнее</button>
                     </div>
                 </div>
             </div>
-            <div id="DT">
-                <div class="cards-fuel">
-                    <h2>Дизельное топливо</h2>
-                    <p>Мы являемся надежным поставщиком дизельного топлива в Москве и Московской области.</p>
-                    <button>Подробнее</button>
-                </div>
-            </div>
         </div>
-        <div class="fuel-supp">
-            <div id="PT">
-                <div class="bake-fuel">
-                    <h2>Печное топливо</h2>
-                    <p>Печное топливо может служить для отопления коммерческой недвижимости и частных домов,
-                        строительных
-                        площадок, в качестве топлива для небольших котельных и сельхоз организаций.</p>
-                    <button>Подробнее</button>
-                </div>
-            </div>
-        </div>
-
     </div>
     <div class="main-gas_station">
         <img src="image/Arrow.png" class="arrows_gs">
         <div class="mini_gas_station">
             <div class="about_gas_station">
                 <h1>Умная <span>АЗС НЕФТЕКОР</span></h1>
-                <p>Мы предоставляем АЗС с комплектом разрешительной документации. У нас есть решение для любого объема
+                <p>Мы предоставляем АЗС с комплектом разрешительной документации. У нас есть решение для любого
+                    объема
                     потребления
                 </p>
             </div>
@@ -106,12 +138,12 @@
                 <h1><span>Производители</span> качественного топлива</h1>
                 <p>С которыми у нас прямые договора. Вы получите топливо без посредников</p>
             </div>
-            <div class="all_makers">
-                <img src="image/tatneft.png" alt="" class="icon_makers">
-                <img src="image/rosneft.png" alt="" class="icon_makers">
-                <img src="image/gazprom.png" alt="" class="icon_makers">
-                <img src="image/lukoil.png" alt="" class="icon_makers">
-                <img src="image/bashneft.png" alt="" class="icon_makers">
+            <div class="scrolling-wrapper">
+                <div class="item"><img src="image/tatneft.png" alt=""></div>
+                <div class="item"><img src="image/rosneft.png" alt=""></div>
+                <div class="item"><img src="image/gazprom.png" alt=""></div>
+                <div class="item"><img src="image/lukoil.png" alt=""></div>
+                <div class="item"><img src="image/bashneft.png" alt=""></div>
             </div>
         </div>
         <div class="delivery">
@@ -121,48 +153,71 @@
             </div>
         </div>
         <div class="clients">
-            <img src="image/klienti.png" alt="">
+            <h1>Клиенты</h1>
+            <p>Мы поставляем дизельное топливо более 15 лет</p>
+            <div class="scrolling-wrapper">
+                <div class="item"><img src="image/lom.png" alt=""></div>
+                <div class="item"> <img src="image/atlant.png" alt=""></div>
+                <div class="item"> <img src="image/yp22.png" alt=""></div>
+                <div class="item"> <img src="image/deka.png" alt=""></div>
+                <div class="item"> <img src="image/jit-log.png" alt=""></div>
+                <div class="item"> <img src="image/atp musor.png" alt=""></div>
+            </div>
         </div>
         <div class="comments">
             <h1>Отзывы</h1>
-            <div class="cards_comments">
-                <p id="memo">Наведите, чтобы посмотреть письмо</p>
-                <img src="image/otziv.png" alt="">
-                <section class="info_comm">
-                    <h2>ООО "ДЭКА"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                </section>
-            </div>
-            <div class="cards_comments">
-                <p id="memo">Наведите, чтобы посмотреть письмо</p>
-                <img src="image/otziv.png" alt="">
-                <section class="info_comm">
-                    <h2>ООО "Уваровская ПМК 22"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                </section>
-            </div>
-            <div class="cards_comments">
-                <p id="memo">Наведите, чтобы посмотреть письмо</p>
-                <img src="image/otziv.png" alt="">
-                <section class="info_comm">
-                    <h2>ООО "ВТОРМЕТАЛЛ"</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                </section>
+            <div class="scrolling-wrapper-cards_comments">
+                <div class="cards_comments">
+                    <p id="memo">Наведите, чтобы посмотреть письмо</p>
+                    <img src="image/otziv.png" alt="">
+                    <section class="info_comm">
+                        <h2>ООО "ДЭКА"</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt
+                            mollit anim id est laborum.</p>
+                    </section>
+                </div>
+                <div class="cards_comments">
+                    <p id="memo">Наведите, чтобы посмотреть письмо</p>
+                    <img src="image/otziv.png" alt="">
+                    <section class="info_comm">
+                        <h2>ООО "Уваровская ПМК 22"</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt
+                            mollit anim id est laborum.</p>
+                    </section>
+                </div>
+                <div class="cards_comments">
+                    <p id="memo">Наведите, чтобы посмотреть письмо</p>
+                    <img src="image/otziv.png" alt="">
+                    <section class="info_comm">
+                        <h2>ООО "ВТОРМЕТАЛЛ"</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt
+                            mollit anim id est laborum.</p>
+                    </section>
+                </div>
             </div>
         </div>
         <div class="news">
@@ -172,25 +227,28 @@
                     <section class="cards_top"><img src="image/camera.png" alt=""></section>
                     <section class="cards_main">
                         <h3>Заголовок новости</h3>
-                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости новости
+                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости
+                            новости
                             Текст новости новости Текст новости Текст новости </p>
                     </section>
                     <button class="bttn_news">Подробнее</button>
                 </div>
-                <div class="cards_news">
+                <div class="cards_news cards_news_mb">
                     <section class="cards_top"><img src="image/camera.png" alt=""></section>
                     <section class="cards_main">
                         <h3>Заголовок новости</h3>
-                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости новости
+                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости
+                            новости
                             Текст новости новости Текст новости Текст новости </p>
                     </section>
                     <button class="bttn_news">Подробнее</button>
                 </div>
-                <div class="cards_news">
+                <div class="cards_news cards_news_mb">
                     <section class="cards_top"><img src="image/camera.png" alt=""></section>
                     <section class="cards_main">
                         <h3>Заголовок новости</h3>
-                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости новости
+                        <p>Текст новости новости Текст новости новости Текст новости Текст новости Текст новости
+                            новости
                             Текст новости новости Текст новости Текст новости </p>
                     </section>
                     <button class="bttn_news">Подробнее</button>
@@ -260,25 +318,24 @@
 
                 </button>
             </a>
+            <section class="social">
+                <section class="social_info">
+                    <p>©2022 Все права защищены</p>
+                    <p>Политика конфиденциальности</p>
+                </section>
+                <section class="social_icon">
+                    <b>Мы в соцсетях:</b>
+                    <img src="image/Yandex_Zen_logo_icon 1.png" alt="">
+                    <img src="image/VK com 1.png" alt="">
+                    <img src="image/whatsapp 1.png" alt="">
+                    <img src="image/telegram_app 1.png" alt="">
+                </section>
+            </section>
+            <div id="toTop"></div>
         </div>
-        <img src="image/Line 17.png" alt="" id="line">
-        <section class="social">
-            <section class="social_info">
-                <p>©2022 Все права защищены</p>
-                <p>Политика конфиденциальности</p>
-            </section>
-            <section class="social_icon">
-                <b>Мы в соцсетях:</b>
-                <img src="image/Yandex_Zen_logo_icon 1.png" alt="">
-                <img src="image/VK com 1.png" alt="">
-                <img src="image/whatsapp 1.png" alt="">
-                <img src="image/telegram_app 1.png" alt="">
-            </section>
-        </section>
-        <div id="toTop"></div>
     </div>
 
-<script src="project.js"></script>
+    <script src="project.js"></script>
 </body>
 
 </html>
