@@ -23,3 +23,4 @@ $(function () {
 });
 
 
+$('link[rel="icon"], link[rel="shortcut icon"]').attr('href', 'image/logo_general.png');
