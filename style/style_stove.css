@@ -14,7 +14,7 @@ span {
 
 .head {
     background: linear-gradient(rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url(image/high-bg1.png);
+            rgba(0, 0, 0, 0.4)), url(../image/bg-dt1.png);
     box-shadow: 0px 83px 45px 2px rgba(0, 0, 0, 0.6) inset;
     background-position: center center;
     background-size: cover;
@@ -80,10 +80,28 @@ nav {
 .header-main {
     width: 55%;
     margin: 180px auto;
+    margin-bottom: 0px;
     text-align: center;
     font-size: 20px;
     color: #FFFFFF;
 
+}
+
+.about_DT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.about_DT p {
+    border: 2px dashed #DBA833;
+    padding: 5px;
+    background-color: #242424;
+}
+
+.header-main .about_DT p {
+    color: #DBA833;
 }
 
 .header-main h1 {
@@ -101,6 +119,7 @@ nav {
     color: #FFFFFF;
     text-decoration: none;
     padding: .5em 10%;
+    margin-bottom: 150px;
     outline: none;
     border-width: 2px 0;
     border-style: solid none;
@@ -118,43 +137,35 @@ nav {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
 
-.caption-nft {
-    color: #FFFFFF;
-    text-align: center;
-    font: 700 17px 'Inter';
-    padding-bottom: 18px;
-}
-
-.caption-nft h1 {
-    margin: 0;
-}
-
 .main {
     color: #FFFFFF;
     font: 500 16px 'inter';
 }
 
+.main h2 {
+    color: #000000;
+}
+
 .main p {
-    color: #CECECE;
+    color: #5B5B5B;
     font: 200 14px 'inter';
 }
+
 
 .main button {
     font-family: 'Inter';
     font-weight: 500;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: .5em 35%;
-    outline: none;
-    border-width: 2px 0;
-    border-style: solid none;
-    border-color: #FDBE33 #000 #D77206;
-    border-radius: 6px;
-    background: linear-gradient(#F3AE0F, #E38916) #DBA833;
+    color: #FDBE33;
+    background: none;
+    border: 2px solid #FDBE33;
     transition: 0.2s;
+    padding: .5em 25%;
+    margin-bottom: 20px;
 }
 
+
 .main button:hover {
+    color: white;
     background: linear-gradient(#f5ae00, #f59500) #f5ae00;
 }
 
@@ -162,155 +173,133 @@ nav {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
 
-
-.bg-ship {
-    height: 500px;
-    background-image: url(image/ship.png);
-    background-position: center center;
-    background-size: cover;
+.cards_fuels {
+    border: 1px dashed #5B5B5B;
+    border-radius: 43px;
+    background-color: white;
+    width: 86%;
+    margin: 20px auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.bg-ship-mob {
-    display: flex;
-}
-
-.bg-lodje {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url(image/lodje.png);
-    background-position: center center;
-    background-size: cover;
-    height: 500px;
+.info_fuels {
     width: 50%;
 }
-
-#ST {
-    background-color: rgba(44, 44, 44, 0.8);
-    width: 300px;
-    height: 250px;
-    margin-left: -10px;
-
-}
-
-.cards-fuel {
-    margin: 50px auto;
-    width: 250px;
-}
-
-.bake-fuel {
-    margin: 25px auto;
-    width: 250px;
-}
-
-#DT {
-    background-color: rgba(44, 44, 44, 0.8);
-    width: 300px;
-    height: 250px;
-    margin-right: -10px;
-}
-
-.battary-fuel {
-    display: flex;
-    justify-content: space-around;
-    height: 250px;
-    background-image: url(image/prodotti-120975-relfdc2776712044e17a91dfbaef1d435d5-1.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#PT {
-    margin-left: 18em;
-    background-color: rgba(44, 44, 44, 0.8);
-    width: 300px;
-    height: 250px;
-}
-
-.main-gas_station {
-    margin: 35px 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.arrows_gs {
-    height: 20em;
-}
-
-.mini_gas_station {
-    border: 3px dashed gray;
-    border-radius: 50px;
+.profit {
+    width: 75%;
+    margin: 70px auto;
     text-align: center;
-
-    margin: 0 40px;
-    font-family: 'inter';
 }
 
-.mini_gas_station p {
-    color: #5B5B5B;
-    font-weight: 500;
-    font-size: 16px;
+.profit h1 {
+    font: 700 30px 'inter';
 }
 
-.mini_gas_station h1 {
-    font-size: 30px;
-}
-
-.mini_gas_station h3 {
-    font-size: 16px;
-}
-
-.about_gas_station {
-    margin: 0 auto;
-    width: 66%;
-}
-
-.gas_station {
+.cards-profit {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
-
 }
 
-.icon_gas_station {
-    width: 235px;
+.inside-cards-profit{
+    border: 2px dashed #DBA833;
+    border-radius: 30px;
+    padding: 10px 30px 0px 30px;
+    margin: 5px;
+    width: 250px;
+}
+.productions{
+    text-align: center;
+}
+.productions h1{
+    font: 700 33px 'inter';
+}
+.productions p{
+    color: #5B5B5B;
+    font: 500 18px 'inter';
 }
 
-.azs {
-    width: 235px;
+.all_productions p{
+    color: #000;
+    font: 500 14px 'inter';
 }
-
-.azs p {
-    font-weight: 200;
-    font-size: 12px;
+.all_productions{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
-
-.bttn_basic {
-    font-family: 'Inter';
-    font-weight: 500;
-    color: #FDBE33;
-    background: none;
-    border: 2px solid #FDBE33;
-    transition: 0.2s;
-    padding: 0.5em 10%;
-    margin: 27px auto;
+.product-1{
+    background-image: url(../image/productions.png);
+    background-position: center center;
+    background-size: cover;
+    height: 220px;
+    width: 388px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
-
-.bttn_basic:hover {
-    color: white;
-    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+.product-1 p{
+    border: 1px solid #DBA833;
+    background: #FFFFFF;
+    text-align: center;
+    width: 140px;
+    padding: 5px;
+    margin: 0px 45px 0px 0px;
 }
-
-.bttn_basic:active {
-    background: linear-gradient(#f59500, #f5ae00) #f59500;
+.product-2{
+    background-image: url(../image/productions1.png);
+    background-position: center center;
+    background-size: cover;
+    height: 220px;
+    width: 251px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.product-2 p{
+    border: 1px solid #DBA833;
+    background: #FFFFFF;
+    text-align: center;
+    width: 140px;
+    padding: 5px;
+    margin: 0;
+}
+.product-3{
+    background-image: url(../image/productions2.png);
+    background-position: center center;
+    background-size: cover;
+    height: 220px;
+    width: 388px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.product-3 p{
+    border: 1px solid #DBA833;
+    background: #FFFFFF;
+    text-align: center;
+    width: 140px;
+    padding: 5px;
+    margin: 0px 0px 0px 45px;
 }
 
 .about {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .maker {
@@ -401,6 +390,13 @@ nav {
 .comments p {
     font: 500 14px 'inter';
     color: #5B5B5B;
+}
+.scale {
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(2);
 }
 
 #memo {
@@ -524,7 +520,7 @@ nav {
 
 .contact_us {
     margin-top: 80px;
-    background-image: url(image/truck2.png);
+    background-image: url(../image/truck2.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -566,6 +562,7 @@ nav {
     border: 2px solid #FDBE33;
     transition: 0.2s;
     margin: 0;
+    margin-top: 5px;
 }
 
 #submit:hover {
@@ -578,7 +575,7 @@ nav {
 }
 
 .our_team {
-    background-image: url(image/bg_team.png);
+    background-image: url(../image/bg_team.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -705,20 +702,18 @@ nav {
 #toTop {
     width: 50px;
     height: 50px;
-    border: 1px solid #828282;
-    border-radius: 50%;
     position: fixed;
     bottom: 30px;
     right: 30px;
     cursor: pointer;
-    background: url(image/Arrow.png);
+    background: url(../image/3d-up-arrow.png);
     background-size: cover;
     background-position: center center;
 
 }
 
 @media (max-width: 1124px) {
-    nav{
+    nav {
         display: none;
     }
 
@@ -734,56 +729,32 @@ nav {
         margin: 15% 10% 15% 10%;
     }
 
-    .bg-ship {
-        height: auto;
-        flex-direction: column;
-        background: none;
-    }
-
-    .bg-lodje {
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bg-ship-mob {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        width: 100%;
-        background-image: url(image/ship.png);
-        background-position: center center;
-        background-size: cover;
-    }
-
-    .battary-fuel {
-        justify-content: center;
-        align-items: center;
-        height: 350px;
-    }
-
-    #PT {
-        margin: auto;
-    }
-
-    #ST {
-        margin: auto;
-    }
-
-    #DT {
-        margin: auto;
-    }
-
-    .arrows_gs {
-        display: none;
-    }
-
     .cards_news_mb {
         display: none;
     }
-    
+    .maker h1{
+        font-size: 30px;
+    }
+    .delivery h1{
+        font-size: 25px;
+    }
+    .product-1{
+        width: 350px;
+        justify-content: center;
+    }
+    .product-1 p{
+        margin: 0;
+    }
+    .product-2{
+        width: 350px;
+    }
+    .product-3{
+        width: 350px;
+        justify-content: center;
+    }
+    .product-3 p{
+        margin: 0;
+    }
     #menuToggle {
         display: block;
         position: absolute;
@@ -871,11 +842,12 @@ nav {
     #menu a {
         color: #272727;
         text-decoration: none;
-        
+
         font: 700 19px 'inter';
 
     }
-    #menu a:last-child{
+
+    #menu a:last-child {
         color: #DBA833;
     }
 
@@ -883,7 +855,8 @@ nav {
         transition: color 0.1s ease;
         color: #DBA833;
     }
-    #menuToggle img{
+
+    #menuToggle img {
         height: 20px;
         margin: 0px 4px -4px 0px;
     }
@@ -941,6 +914,27 @@ nav {
 
     .info_comm {
         width: auto;
+    }
+
+    .contact_us h1 {
+        margin-left: 5px;
+    }
+
+    .contact_us input {
+        margin: 5px;
+        width: auto;
+    }
+
+    #submit {
+        margin: 5px;
+    }
+
+    .data_input {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
     }
 
     .scrolling-wrapper {
